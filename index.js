@@ -1,11 +1,12 @@
-// let total = 0,
-// 	count = 1;
-// while (count <= 10) {
-// 	total += count;
-// 	count += 1;
-// }
-// console.log(total);
-/*....Factorial function */
+let total = 0,
+	count = 1;
+while (count <= 10) {
+	total += count;
+	count += 1;
+}
+console.log(total);
+
+//Factorial function //
 
 function factorial(n) {
 	if (n == 0) {
@@ -15,3 +16,125 @@ function factorial(n) {
 	}
 }
 console.log(factorial(8));
+
+//String Values//
+
+`${100 / 2}`;
+
+//Unary Operator//
+
+console.log(typeof 4.5);
+
+console.log(typeof "X");
+
+console.log(-(10 - 2));
+
+//Boolean Valuew//
+
+console.log("Aardvark" < "Zoroaster");
+
+console.log("itchy" != "scratchy");
+
+console.log(NaN == NaN);
+
+//Logical opertore//
+
+1 + 1 == 2 && 10 * 10 > 50;
+
+console.log(false ? 1 : 2);
+
+//Chapter-2//
+
+//Program structure //
+
+let ten = 10;
+console.log(ten * ten);
+
+//....//
+
+mood = "Dark";
+console.log(mood);
+let Benton = 140;
+
+//.....//
+
+Benton = Benton - 40;
+console.log(Benton);
+
+//..//
+
+let one = 1,
+	two = 2;
+console.log(one + two);
+
+//Functions//
+
+// prompt("Enter passcode");
+
+let X = 30;
+console.log("the value of x is", X);
+
+console.log(Math.max(2, 4));
+
+console.log(Math.min(2, 4) + 100);
+
+//Control Flow //
+
+// let theNumber = Number(prompt("Pick a number"));
+// console.log("your number is the square root of", +theNumber * theNumber);
+
+// let theNumber = Number(prompt("Pick a number"));
+// if (!Number.isNaN(theNumber)) {
+// 	console.log("Your number is the square root of", +theNumber * theNumber);
+// }
+
+// let num = Number(prompt("Pick a number"));
+// if (num < 10) {
+// 	console.log("Small");
+// } else if (num < 100) {
+// 	console.log("Medium");
+// } else {
+// 	console.log("Large");
+// }
+
+//whileloop//
+
+let number = 0;
+while (number <= 18) {
+	console.log(number);
+	number = number + 2;
+}
+
+//do while//
+
+// let yourName;
+// do {
+// 	yourName = prompt("Who are you?");
+// } while (!yourName);
+// console.log(yourName);
+
+if (false != true) {
+	console.log("That makes sense.");
+	if (1 < 2) {
+		console.log("No surprise there.");
+	}
+}
+
+// For Loop //
+
+for (let number = 0; number <= 12; number = number + 1) {
+	console.log(number);
+}
+
+let result = 1;
+for (let counter = 0; counter < 10; counter = counter + 1) {
+	result = result * 2;
+}
+console.log(result);
+
+for (let current = 20; ; current = current + 1) {
+	if (current % 7 == 0) {
+		console.log(current);
+		break;
+	}
+}
