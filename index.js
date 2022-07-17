@@ -56,7 +56,6 @@ mood = "Dark";
 console.log(mood);
 let Benton = 140;
 
-//.....//
 
 Benton = Benton - 40;
 console.log(Benton);
@@ -80,22 +79,22 @@ console.log(Math.min(2, 4) + 100);
 
 //Control Flow //
 
-// let theNumber = Number(prompt("Pick a number"));
-// console.log("your number is the square root of", +theNumber * theNumber);
+let theNumber = Number(prompt("Pick a number"));
+console.log("your number is the square root of", +theNumber * theNumber);
 
-// let theNumber = Number(prompt("Pick a number"));
-// if (!Number.isNaN(theNumber)) {
-// 	console.log("Your number is the square root of", +theNumber * theNumber);
-// }
+let theNumber = Number(prompt("Pick a number"));
+if (!Number.isNaN(theNumber)) {
+	console.log("Your number is the square root of", +theNumber * theNumber);
+}
 
-// let num = Number(prompt("Pick a number"));
-// if (num < 10) {
-// 	console.log("Small");
-// } else if (num < 100) {
-// 	console.log("Medium");
-// } else {
-// 	console.log("Large");
-// }
+let num = Number(prompt("Pick a number"));
+if (num < 10) {
+	console.log("Small");
+} else if (num < 100) {
+	console.log("Medium");
+} else {
+	console.log("Large");
+}
 
 //whileloop//
 
