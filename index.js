@@ -215,4 +215,90 @@ const halve = function(n) {
   console.log(n);
   // → 10
 
-  
+  //Function in another Function //
+
+
+  const hummus = function (factor) {
+		const ingredient = function (amount, unit, name) {
+			let ingredientAmount = amount * factor;
+			if (ingredientAmount > 1) {
+				unit += "s";
+			}
+			console.log(`${ingredientAmount} ${unit} ${name}`);
+		};
+		ingredient(1, "can", "chickpeas");
+		ingredient(0.25, "cup", "tahini");
+		ingredient(0.25, "cup", "lemon juice");
+		ingredient(1, "clove", "garlic");
+		ingredient(2, "tablespoon", "olive oil");
+		ingredient(0.5, "teaspoon", "cumin");
+	};
+
+	// let launchMissiles = function () {
+	// 	let safeMode;
+	// 	missileSystem.launch("now");
+	// };
+	// if (safeMode) {
+	// 	launchMissiles = function () {
+	// 		/* do nothing */
+	// 	};
+	// }
+
+	console.log("The future says:", future());
+
+	function future() {
+		return "You'll never have flying cars";
+	}
+
+	console.log("Arun", recret());
+
+	function recret() {
+		return "You will get soon";
+	}
+
+
+	const powerFull = (base, exponent) => {
+		let result = 1;
+		for (let count = 0; count < exponent; count++) {
+		  result *= base;
+		}
+		return result;
+	  };
+
+
+	  const horn = () => {
+		console.log("Toot");
+	  };
+
+
+	  function greet(who) {
+		console.log("Hello " + who);
+	  }
+	  greet("Harry");
+	  console.log("Bye");
+
+
+	  function chicken() {
+		return egg();
+	  }
+	  function egg() {
+		return chicken();
+	  }
+	  console.log(chicken() + " came first.");
+	  // → ??
+
+
+
+	  function minus(a, b) {
+		if (b === undefined) return -a;
+		else return a - b;
+	  }
+	  
+	  console.log(minus(10));
+	  // → -10
+	  console.log(minus(10, 5));
+	  // → 5
+
+
+
+
