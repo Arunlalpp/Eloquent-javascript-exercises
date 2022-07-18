@@ -542,3 +542,24 @@ function max(...numbers) {
   }
   console.log(max(4, 1, 9, -2));
   // → 9
+  console.log(Math.floor(Math.random() * 10));
+	// → 2
+
+	//***Destructuring */
+
+	function phi(table) {
+		return (
+			(table[3] * table[0] - table[2] * table[1]) /
+			Math.sqrt(
+				(table[2] + table[3]) *
+					(table[0] + table[1]) *
+					(table[1] + table[3]) *
+					(table[0] + table[2])
+			)
+		);
+	}
+
+
+	let {name} = {name: "Faraji", age: 23};
+console.log(name);
+// → Faraji
