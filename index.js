@@ -461,7 +461,7 @@ function tableFor(event, journal) {
 	}
 	return table;
 }
-  
+
 //   console.log(tableFor("pizza", JOURNAL));
 // 	// → [76, 9, 4, 1]
 
@@ -478,19 +478,67 @@ function tableFor(event, journal) {
 // 		}
 // 		return events;
 // 	}
-  
+
 //   console.log(journalEvents(JOURNAL));
 //   // → ["carrot", "exercise", "weekend", "bread", …]
 
 
 
-  let todoList = [];
-	function remember(task) {
-		todoList.push(task);
+let todoList = [];
+function remember(task) {
+	todoList.push(task);
+}
+function getTask() {
+	return todoList.shift();
+}
+function rememberUrgently(task) {
+	todoList.unshift(task);
+}
+
+///***Indexof */
+
+console.log([1, 2, 3, 4, 5, 6, 7, 8].indexOf(5));
+
+console.log([1, 2, 3, 4, 5, 6, 7, 8].slice(2, 5));
+
+function remove(array, index) {
+	return array.slice(0, index).concat(array.slice(index + 1));
+}
+console.log(remove(["a", "b", "c", "d", "e"], 2));
+
+////***String and the otehr properties */
+
+let kim = "Kim";
+kim.age = 88;
+console.log(kim.age);
+// → undefined
+
+console.log("Apple".slice(2, 4));
+console.log("one two three".indexOf("ee"));
+// → 11
+console.log("  okay \n ".trim());
+// → okay
+
+console.log("LA".repeat(3));
+// → LALALA
+
+let String = "Arunlalpp";
+console.log(String.length);
+
+console.log(String[4]);
+
+
+
+
+//****Rest parameters */
+
+
+function max(...numbers) {
+	let result = -Infinity;
+	for (let number of numbers) {
+	  if (number > result) result = number;
 	}
-	function getTask() {
-		return todoList.shift();
-	}
-	function rememberUrgently(task) {
-		todoList.unshift(task);
-	}
+	return result;
+  }
+  console.log(max(4, 1, 9, -2));
+  // → 9
