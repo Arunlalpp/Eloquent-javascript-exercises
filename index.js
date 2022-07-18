@@ -418,21 +418,79 @@ console.log("left" in anObject);
 console.log("right" in anObject);
 // → true
 
-
 // Copy object fromn anpther object //
 
-let objectA = {a: 1, b: 2 ,c:8,d:12};
-Object.assign(objectA, {b: 3, c: 4,d:18});
+let objectA = { a: 1, b: 2, c: 8, d: 12 };
+Object.assign(objectA, { b: 3, c: 4, d: 18 });
 console.log(objectA);
 // → {a: 1, b: 3, c: 4}
 
-
 //Mutability//
 
-let object1 ={value: 10}
-let object2 ={value: 12}
-let object3 ={value: 14}
-let object4 ={value: 10}
-console.log(object1 == object4)
+let object1 = { value: 10 };
+let object2 = { value: 12 };
+let object3 = { value: 14 };
+let object4 = { object1 };
+console.log(object1 == object4);
 
-console.log(object2 == object3)
+console.log(object2 == object3);
+
+function phi(table) {
+	return (
+		(table[3] * table[0] - table[2] * table[1]) /
+		Math.sqrt(
+			(table[2] + table[3]) *
+				(table[0] + table[1]) *
+				(table[1] + table[3]) *
+				(table[0] + table[2])
+		)
+	);
+}
+
+console.log(phi([76, 9, 4, 1]));
+// → 0.068599434
+
+function tableFor(event, journal) {
+	let table = [0, 0, 0, 0];
+	for (let i = 0; i < journal.length; i++) {
+		let entry = journal[i],
+			index = 0;
+		if (entry.events.includes(event)) index += 1;
+		if (entry.squirrel) index += 2;
+		table[index] += 1;
+	}
+	return table;
+}
+  
+//   console.log(tableFor("pizza", JOURNAL));
+// 	// → [76, 9, 4, 1]
+
+// 	///Complete correlation///
+
+// 	function journalEvents(journal) {
+// 		let events = [];
+// 		for (let entry of journal) {
+// 			for (let event of entry.events) {
+// 				if (!events.includes(event)) {
+// 					events.push(event);
+// 				}
+// 			}
+// 		}
+// 		return events;
+// 	}
+  
+//   console.log(journalEvents(JOURNAL));
+//   // → ["carrot", "exercise", "weekend", "bread", …]
+
+
+
+  let todoList = [];
+	function remember(task) {
+		todoList.push(task);
+	}
+	function getTask() {
+		return todoList.shift();
+	}
+	function rememberUrgently(task) {
+		todoList.unshift(task);
+	}
