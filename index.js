@@ -79,22 +79,22 @@ console.log(Math.min(2, 4) + 100);
 
 //Control Flow //
 
-let theNumber = Number(prompt("Pick a number"));
-console.log("your number is the square root of", +theNumber * theNumber);
+// let theNumber = Number(prompt("Pick a number"));
+// console.log("your number is the square root of", +theNumber * theNumber);
 
-let theNumber = Number(prompt("Pick a number"));
-if (!Number.isNaN(theNumber)) {
-	console.log("Your number is the square root of", +theNumber * theNumber);
-}
+// let theNumber = Number(prompt("Pick a number"));
+// if (!Number.isNaN(theNumber)) {
+// 	console.log("Your number is the square root of", +theNumber * theNumber);
+// }
 
-let num = Number(prompt("Pick a number"));
-if (num < 10) {
-	console.log("Small");
-} else if (num < 100) {
-	console.log("Medium");
-} else {
-	console.log("Large");
-}
+// let num = Number(prompt("Pick a number"));
+// if (num < 10) {
+// 	console.log("Small");
+// } else if (num < 100) {
+// 	console.log("Medium");
+// } else {
+// 	console.log("Large");
+// }
 
 //whileloop//
 
@@ -140,26 +140,54 @@ for (let current = 20; ; current = current + 1) {
 
 //SwitchCase//
 
-switch (prompt("What is the weather like?")) {
-    case "rainy":
-      console.log("Remember to bring an umbrella.");
-      break;
-    case "sunny":
-      console.log("Dress lightly.");
-    case "cloudy":
-      console.log("Go outside.");
-      break;
-    default:
-      console.log("Unknown weather type!");
-      break;
-  }
+// switch (prompt("What is the weather like?")) {
+//     case "rainy":
+//       console.log("Remember to bring an umbrella.");
+//       break;
+//     case "sunny":
+//       console.log("Dress lightly.");
+//     case "cloudy":
+//       console.log("Go outside.");
+//       break;
+//     default:
+//       console.log("Unknown weather type!");
+//       break;
+//   }
+//   let n = 5;
 
 
-  let n = 5;
 // External loop.
-for (let i = 1; i <= n; i++) {
-// printing spaces.
-for (let j = 1; j <= n - i; j++) {
-process. stdout. write(' ')
-}
-}
+// for (let i = 1; i <= n; i++) {
+// // printing spaces.
+// for (let j = 1; j <= n - i; j++) {
+// process. stdout. write(' ')
+// }
+// }
+
+
+// Functins //
+
+const square = function(x) {
+	return x * x;
+  };
+  
+  console.log(square(12));
+
+
+  const makeNoise = function() {
+	console.log("Pling!");
+  };
+  
+
+
+  makeNoise();
+  
+  const power = function (base, exponent) {
+		let result = 1;
+		for (let count = 0; count < exponent; count++) {
+			result *= base;
+		}
+		return result;
+	};
+
+	console.log(power(2, 10));
