@@ -563,3 +563,46 @@ function max(...numbers) {
 	let {name} = {name: "Faraji", age: 23};
 console.log(name);
 // → Faraji
+
+
+function fun() {
+	var name = "Mukul Latiyan";
+	console.log(name); // Mukul Latiyan
+}
+fun();
+
+var isVarr = "arunlapp";
+function justFun() {
+	var isVarr;
+	console.log(isVarr);
+}
+justFun();
+
+var a = "foo";
+function isFun() {
+	console.log(a);
+}
+isFun();
+
+function isFun() {
+	console.log(tell);
+	var tell = "arunlalpp";
+}
+isFun();
+
+function Fun() {
+	isVarr = "arunlalpp";
+	var isVarr;
+	console.log(isVarr);
+}
+
+function foo() {
+	let b = 0;
+	isVarr = "foo";
+	isVarr = "foo";
+	if (a <= 1) console.log(foo);
+}
+function koo() {
+	let b = "koo";
+	if (b <= 5) console.log(koo);
+}
