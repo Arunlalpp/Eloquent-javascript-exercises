@@ -565,44 +565,82 @@ console.log(name);
 // → Faraji
 
 
-function fun() {
-	var name = "Mukul Latiyan";
-	console.log(name); // Mukul Latiyan
-}
-fun();
+// function fun() {
+// 	var name = "Mukul Latiyan";
+// 	console.log(name); // Mukul Latiyan
+// }
+// fun();
 
-var isVarr = "arunlapp";
-function justFun() {
-	var isVarr;
-	console.log(isVarr);
-}
-justFun();
+// var isVarr = "arunlapp";
+// function justFun() {
+// 	var isVarr;
+// 	console.log(isVarr);
+// }
+// justFun();
 
-var a = "foo";
-function isFun() {
-	console.log(a);
-}
-isFun();
+// var a = "foo";
+// function isFun() {
+// 	console.log(a);
+// }
+// isFun();
 
-function isFun() {
-	console.log(tell);
-	var tell = "arunlalpp";
-}
-isFun();
+// function isFun() {
+// 	console.log(tell);
+// 	var tell = "arunlalpp";
+// }
+// isFun();
 
-function Fun() {
-	isVarr = "arunlalpp";
-	var isVarr;
-	console.log(isVarr);
-}
+// function Fun() {
+// 	isVarr = "arunlalpp";
+// 	var isVarr;
+// 	console.log(isVarr);
+// }
 
+// foo();
+// function foo() {
+// 	let b = b + 1;
+// 	console.log("foo:", b);
+// 	if (b >= 10) {
+// 		console.log(foo);
+// 	} else {
+// 		b++;
+// 		foo(b);
+// 	}
+// }
+// function koo() {
+// 	let b = b + 1;
+// 	console.log("koo is:", b);
+// 	if (b >= 10) {
+// 		console.log(koo);
+// 	} else {
+// 		b++;
+// 		koo(b);
+// 	}
+// }
+
+// let b = 10;
+// console.log(b, " ---- ");
+
+let a = 10;
+let b = 10;
+b = b + 1;
 function foo() {
-	let b = 0;
-	isVarr = "foo";
-	isVarr = "foo";
-	if (a <= 1) console.log(foo);
+	console.log("inside the loop:", a);
+	if (a >= 10) {
+		console.log(foo);
+	} else {
+		a++;
+		koo(a);
+	}
 }
+foo();
 function koo() {
-	let b = "koo";
-	if (b <= 5) console.log(koo);
+	console.log("inside the loop:", b);
+	if (b >= 10) {
+		console.log(koo);
+	} else {
+		// b++;
+		koo(b);
+	}
 }
+// foo();
