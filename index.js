@@ -639,8 +639,13 @@ function koo() {
 
 function foo() {
 	x = 0;
-	for (x = 1; x < 10; x++) {
-		console.log("foo:", x);
+	if (x == 0)
+		for (x = 0; x <= 10; x++) {
+			console.log(x);
+		}
+	else {
+		foo();
 	}
 }
-foo();
+
+
