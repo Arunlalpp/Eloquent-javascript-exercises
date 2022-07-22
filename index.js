@@ -482,8 +482,6 @@ function tableFor(event, journal) {
 //   console.log(journalEvents(JOURNAL));
 //   // → ["carrot", "exercise", "weekend", "bread", …]
 
-
-
 let todoList = [];
 function remember(task) {
 	todoList.push(task);
@@ -527,43 +525,37 @@ console.log(String.length);
 
 console.log(String[4]);
 
-
-
-
 //****Rest parameters */
-
 
 function max(...numbers) {
 	let result = -Infinity;
 	for (let number of numbers) {
-	  if (number > result) result = number;
+		if (number > result) result = number;
 	}
 	return result;
-  }
-  console.log(max(4, 1, 9, -2));
-  // → 9
-  console.log(Math.floor(Math.random() * 10));
-	// → 2
+}
+console.log(max(4, 1, 9, -2));
+// → 9
+console.log(Math.floor(Math.random() * 10));
+// → 2
 
-	//***Destructuring */
+//***Destructuring */
 
-	function phi(table) {
-		return (
-			(table[3] * table[0] - table[2] * table[1]) /
-			Math.sqrt(
-				(table[2] + table[3]) *
-					(table[0] + table[1]) *
-					(table[1] + table[3]) *
-					(table[0] + table[2])
-			)
-		);
-	}
+function phi(table) {
+	return (
+		(table[3] * table[0] - table[2] * table[1]) /
+		Math.sqrt(
+			(table[2] + table[3]) *
+				(table[0] + table[1]) *
+				(table[1] + table[3]) *
+				(table[0] + table[2])
+		)
+	);
+}
 
-
-	let {name} = {name: "Faraji", age: 23};
+let { name } = { name: "Faraji", age: 23 };
 console.log(name);
 // → Faraji
-
 
 // function fun() {
 // 	var name = "Mukul Latiyan";
@@ -644,3 +636,11 @@ function koo() {
 	}
 }
 // foo();
+
+function foo() {
+	x = 0;
+	for (x = 1; x < 10; x++) {
+		console.log("foo:", x);
+	}
+}
+foo();
