@@ -637,6 +637,9 @@ function koo() {
 }
 // foo();
 
+
+
+
 function foo() {
 	x = 0;
 	if (x == 0)
@@ -647,5 +650,16 @@ function foo() {
 		foo();
 	}
 }
-
+let a = 10;
+let b = 10;
+b = b + 1;
+function foo() {
+	console.log("inside the loop:", a);
+	if (a >= 10) {
+		console.log(foo);
+	} else {
+		a++;
+		koo(a);
+	}
+}
 
