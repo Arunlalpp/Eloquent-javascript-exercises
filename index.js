@@ -640,28 +640,28 @@ function koo() {
 
 
 
-function foo() {
-	x = 0;
-	if (x == 0)
-		for (x = 0; x <= 10; x++) {
-			console.log(x);
-		}
-	else {
-		foo();
-	}
-}
-let a = 10;
-let b = 10;
-b = b + 1;
-function foo() {
-	console.log("inside the loop:", a);
-	if (a >= 10) {
-		console.log(foo);
-	} else {
-		a++;
-		koo(a);
-	}
-}
+// function foo() {
+// 	x = 0;
+// 	if (x == 0)
+// 		for (x = 0; x <= 10; x++) {
+// 			console.log(x);
+// 		}
+// 	else {
+// 		foo();
+// 	}
+// }
+// let a = 10;
+// let b = 10;
+// b = b + 1;
+// function foo() {
+// 	console.log("inside the loop:", a);
+// 	if (a >= 10) {
+// 		console.log(foo);
+// 	} else {
+// 		a++;
+// 		koo(a);
+// 	}
+// }
 
 let total = 0, count = 1;
 while (count <= 10) {
@@ -669,3 +669,14 @@ while (count <= 10) {
   count += 1;
 }
 console.log(total);
+
+function repeat(n, action) {
+	for (let i = 0; i < n; i++) {
+	  action(i);
+	}
+  }
+  
+  repeat(3, console.log);
+  // → 0
+  // → 1
+  // → 2
