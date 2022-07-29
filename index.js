@@ -613,32 +613,29 @@ console.log(name);
 // let b = 10;
 // console.log(b, " ---- ");
 
-let a = 10;
-let b = 10;
-b = b + 1;
-function foo() {
-	console.log("inside the loop:", a);
-	if (a >= 10) {
-		console.log(foo);
-	} else {
-		a++;
-		koo(a);
-	}
-}
-foo();
-function koo() {
-	console.log("inside the loop:", b);
-	if (b >= 10) {
-		console.log(koo);
-	} else {
-		// b++;
-		koo(b);
-	}
-}
+// let a = 10;
+// let b = 10;
+// b = b + 1;
+// function foo() {
+// 	console.log("inside the loop:", a);
+// 	if (a >= 10) {
+// 		console.log(foo);
+// 	} else {
+// 		a++;
+// 		koo(a);
+// 	}
+// }
 // foo();
-
-
-
+// function koo() {
+// 	console.log("inside the loop:", b);
+// 	if (b >= 10) {
+// 		console.log(koo);
+// 	} else {
+// 		// b++;
+// 		koo(b);
+// 	}
+// }
+// foo();
 
 // function foo() {
 // 	x = 0;
@@ -663,20 +660,83 @@ function koo() {
 // 	}
 // }
 
-let total = 0, count = 1;
-while (count <= 10) {
-  total += count;
-  count += 1;
-}
-console.log(total);
+// let total = 0, count = 1;
+// while (count <= 10) {
+//   total += count;
+//   count += 1;
+// }
+// console.log(total);
 
-function repeat(n, action) {
-	for (let i = 0; i < n; i++) {
-	  action(i);
-	}
-  }
-  
-  repeat(3, console.log);
-  // → 0
-  // → 1
-  // → 2
+// function repeat(n, action) {
+// 	for (let i = 0; i < n; i++) {
+// 	  action(i);
+// 	}
+//   }
+
+//   repeat(3, console.log);
+//   // → 0
+//   // → 1
+//   // → 2
+
+//   Javascript array methods//
+
+// const arr1 = ['Cecile', 'Lone'];
+// const arr2 = ['Email','Tobias','Linus'];
+// const children = arr1.concat(arr2);
+// console.log(children)
+/*sdvcwvwve*/
+const arr1 = ["Cecilie", "Lone"];
+const arr2 = ["Emil", "Tobias", "Linus"];
+const arr3 = ["Robin"];
+const children = arr1.concat(arr2, arr3);
+console.log(children);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let text = fruits.constructor;
+// console.log(text)
+
+// const fruit = ["Banana", "Orange", "Apple", "Mango"];
+// fruit.copyWithin(2, 0);
+
+let primeNumbers = [2, 3, 5, 7];
+let evenNumbers = [2, 4, 6, 8];
+
+// join two arrays
+let joinedArrays = primeNumbers.concat(evenNumbers);
+console.log(joinedArrays);
+
+let words = ["apple", "mango", "orange", "banana"];
+words.copyWithin(3, 0);
+console.log(words);
+
+const albhbets = ["a", "b", "c"];
+let iterator = albhbets.entries();
+for (let entry of iterator) {
+	console.log(entry);
+}
+
+//Every//
+function checkAdult(age) {
+	return age >= 18;
+}
+const ageArray = [34, 23, 20, 26, 12];
+let check = ageArray.every(checkAdult);
+
+if (!check) {
+	console.log("All members must be at least 18 years of age:");
+}
+
+let check1 = ageArray.every((age) => age >= 18);
+console.log(check1);
+
+const Fruits = ["mango", "apple", "banana"];
+Fruits.fill("cherry");
+console.log(Fruits);
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function checkEven(number) {
+	if (number % 2 == 0) return true;
+	else return false;
+}
+let evennumbers = numbers.filter(checkEven);
+console.log(evenNumbers)
