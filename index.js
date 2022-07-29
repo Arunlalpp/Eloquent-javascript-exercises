@@ -739,4 +739,17 @@ function checkEven(number) {
 	else return false;
 }
 let evennumbers = numbers.filter(checkEven);
-console.log(evenNumbers)
+console.log(evenNumbers);
+
+let value =[1,2,3,4,5,6,7,8,9,10];
+function checkNumberEven(Values)
+{
+	if(Values % 2 == 0)
+	return true;
+	else
+	return false;
+}
+
+let evenNumber = value.find(checkNumberEven)
+console.log(evenNumber)
+
